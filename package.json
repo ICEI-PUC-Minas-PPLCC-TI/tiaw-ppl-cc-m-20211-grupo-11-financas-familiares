@@ -10,7 +10,7 @@
     "description": "Este é um repositório _template_ que tem como principal objetivo\r fornecer uma estrutura inicial para projetos da disciplina _Trabalho\r Interdisciplina - Aplicações Web_ da PUC Minas.",
 
 
-    "main": "home.html",
+    "main": "index.js",
 
 
     "directories": {
