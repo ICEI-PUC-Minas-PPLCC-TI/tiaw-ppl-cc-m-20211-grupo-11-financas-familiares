@@ -8,8 +8,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "browserify web/main.js -t brfs -g uglifyify -o web/static/bundle.js",
-        "watch": "watchify web/main.js -t brfs -d -o web/static/bundle.js -v",
+        // "build": "browserify web/main.js -t brfs -g uglifyify -o web/static/bundle.js",
+        // "watch": "watchify web/main.js -t brfs -d -o web/static/bundle.js -v",
         "start": "node app.js"
     },
     "repository": {
