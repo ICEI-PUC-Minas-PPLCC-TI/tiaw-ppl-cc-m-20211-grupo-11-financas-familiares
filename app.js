@@ -8,7 +8,7 @@ var server = http.createServer(function(req, res) {
     myReadStream.pipe(res)
 })
 
-var porta = process.env.PORT || 3000
+var porta = process.env.PORT || 3002
 server.listen(porta, '127.0.0.1')
 
 
