@@ -12,7 +12,7 @@ var porta = process.env.PORT || 3002
 server.listen(porta, '127.0.0.1')
 
 
-console.log('yo dawgs, now listening to port 3000')
+console.log('yo dawgs, now listening to port 127.0.0.1:3002')
 
 // var http = require('http');
 // var fs = require('fs');
