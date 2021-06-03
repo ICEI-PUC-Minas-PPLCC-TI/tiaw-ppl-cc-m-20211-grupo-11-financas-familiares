@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <title>Finance</title>
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/login.css">
+    <script src="src/scripts/login.js"></script>
+
 </head>
 
 
@@ -28,7 +31,31 @@
                         <a class="flex-sm-fill text-sm-center nav-link" href="tiposinvestimentos.html">Tipos de Investimentos</a>
                         <a class="flex-sm-fill text-sm-center nav-link" href="#">Duvidas</a>
                         <a class="flex-sm-fill text-sm-center nav-link" href="#">Contatos</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="login.html">Login</a>
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                            <div id="id01" class="modal">
+                                <form class="modal-content animate" id="login">
+                                    <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    </div>
+
+                                    <div class="container">
+                                        <label for="usuario" class="form-label">Usuario</label>
+                                        <input type="text" class="form-control" id="usuario" autocomplete="off">
+
+                                        <label for="senha" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" id="senha" autocomplete="off">
+                                        
+                                    <button type="submit" onclick="document.getElementById('id01').style.display='none'">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
                     </nav>
                 </div>
             </div>

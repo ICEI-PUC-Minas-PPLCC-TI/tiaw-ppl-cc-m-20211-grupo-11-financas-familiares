@@ -1,11 +1,20 @@
-window.onload = () => {
-    if (localStorage.getItem('username'))
-        usuario.value = localStorage.getItem('username')
+
+
+var modal = document.getElementById('id01');
+
+window.onload = () =>{
     login.onsubmit = (evento) => {
         console.log({ nome: usuario.value, senha: senha.value});
-        evento.preventDefault();
         window.localStorage.setItem('username', usuario.value);
-        usuario.value = '';
-        senha.value = '';
+        window.localStorage.setItem('password', senha.value);
     }
 }
+
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
