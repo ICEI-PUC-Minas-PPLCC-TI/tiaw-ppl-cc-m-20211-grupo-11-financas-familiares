@@ -6,11 +6,11 @@ var fs = require('fs')
 var server = http.createServer(function(req, res) {
     console.log('request was made: ' + req.url)
     res.writeHead(200, { 'Content-Type': 'text/html' })
-    var myReadStream = fs.createReadStream(__dirname + '../../login.html', 'utf8')
+    var myReadStream = fs.createReadStream(__dirname + '../index.html', 'utf8')
     myReadStream.pipe(res)
 })
 
-var porta = process.env.PORT || 3000
+var porta = process.env.PORT || 3001
 server.listen(porta, '127.0.0.1')
 
 
