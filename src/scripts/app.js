@@ -16,7 +16,7 @@ server.listen(porta, '127.0.0.1')
 
 console.log('yo dawgs, now listening to port 127.0.0.1:3000')
 
-window.location.replace("../index.html")
+// window.location.replace("../index.html")
 
 // var http = require('http');
 // var fs = require('fs');
