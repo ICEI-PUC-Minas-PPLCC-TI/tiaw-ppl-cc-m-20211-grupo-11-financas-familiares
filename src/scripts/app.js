@@ -6,15 +6,23 @@ var fs = require('fs')
 var server = http.createServer(function(req, res) {
     console.log('request was made: ' + req.url)
     res.writeHead(200, { 'Content-Type': 'text/html' })
-    var myReadStream = fs.createReadStream(__dirname + '../../login.html', 'utf8')
+    var myReadStream = fs.createReadStream(__dirname + '../index.html', 'utf8')
     myReadStream.pipe(res)
 })
 
-var porta = process.env.PORT || 3000
-server.listen(porta, '127.0.0.1')
+var porta = process.env.PORT || 8080
+server.listen(porta, '0.0.0.0')
+
+// var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+// var server_host = process.env.YOUR_HOST || '0.0.0.0';
+// server.listen(server_port, server_host, function() {
+//     console.log('Listening on port %d', server_port);
+// });
 
 
-console.log('yo dawgs, now listening to port 127.0.0.1:8080')
+console.log('yo dawgs, now listening to port 127.0.0.1:3000')
+
+// window.location.replace("../index.html")
 
 // var http = require('http');
 // var fs = require('fs');
