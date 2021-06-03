@@ -10,8 +10,14 @@ var server = http.createServer(function(req, res) {
     myReadStream.pipe(res)
 })
 
-var porta = process.env.PORT || 3001
-server.listen(porta, '127.0.0.1')
+var porta = process.env.PORT || 8080
+server.listen(porta, '0.0.0.0')
+
+// var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+// var server_host = process.env.YOUR_HOST || '0.0.0.0';
+// server.listen(server_port, server_host, function() {
+//     console.log('Listening on port %d', server_port);
+// });
 
 
 console.log('yo dawgs, now listening to port 127.0.0.1:3000')
