@@ -6,7 +6,7 @@ var fs = require('fs')
 var server = http.createServer(function(req, res) {
     console.log('request was made: ' + req.url)
     res.writeHead(200, { 'Content-Type': 'text/html' })
-    var myReadStream = fs.createReadStream(__dirname + '../index.html', 'utf8')
+    var myReadStream = fs.createReadStream(__dirname + '/src/index.html', 'utf8')
     myReadStream.pipe(res)
 })
 
@@ -20,7 +20,7 @@ server.listen(porta, '0.0.0.0')
 // });
 
 
-console.log('yo dawgs, now listening to port 127.0.0.1:3000')
+console.log('yo dawgs, now listening to port 0.0.0.0:8080')
 
 // window.location.replace("../index.html")
 
