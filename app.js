@@ -6,7 +6,7 @@ var fs = require('fs')
 var server = http.createServer(function(req, res) {
     console.log('request was made: ' + req.url)
     res.writeHead(200, { 'Content-Type': 'text/html' })
-    var myReadStream = fs.createReadStream('src/index.html', 'utf8') //__dirname + 
+    var myReadStream = fs.createReadStream('src/_index.html', 'utf8') //__dirname + 
     myReadStream.pipe(res)
 })
 
