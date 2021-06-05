@@ -11,6 +11,7 @@ var server = http.createServer(function(req, res) {
 })
 
 var port = process.env.PORT || 8080
-server.listen(port, '0.0.0.0')
+    // server.listen(port, '0.0.0.0')
+server.listen(port, '127.0.0.1')
 
-console.log('yo dawgs, now listening to port 0.0.0.0:8080')
+console.log('yo dawgs, now listening to port 127.0.0.1:8080')
