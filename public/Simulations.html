@@ -38,13 +38,15 @@
      
            <label for="valor1">Digite o valor a ser investido :</label>
            <input type="text" name="valor1" id="valor1" />
-           
+
+           <label for="valor2">Digite o tempo em meses :</label>
+           <input type="text" name="valor2" id="valor2" />
+
            <label for="oper">Selecione a operação:</label>
            <select name="oper" id="oper">
-              <option value="somar">CDB</option>
-              <option value="subtrair">Subtrair</option>
-              <option value="multiplicar">Multiplifcar</option>
-              <option value="dividir">Tesouro Selic</option>
+              <option value="cdb">CDB</option>
+              <option value="Tesouro Direto">Tesouro Direto</option>
+              <option value="lci">LCI e LCA</option>
            </select>
      
            <label for="res">Resultado:</label>
@@ -53,6 +55,33 @@
            <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
         </fieldset>
      </form>
+     <div class="card-deck boxx">
+        <div class="card">
+          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">CDB</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tesouro Direto</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">LCI e LCA</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
      <footer class="container footer">
         FINANCE - Todos os direitos reservados - 2021
     </footer>

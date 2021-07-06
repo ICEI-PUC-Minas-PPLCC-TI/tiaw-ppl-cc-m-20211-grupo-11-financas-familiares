@@ -30,5 +30,15 @@ form fieldset {
  form input.botao {
     display: block;
     width: auto;
-    float: right;
+    float: left;
+ }
+
+ .boxx{
+    background-color: aqua;
+    vertical-align: top;
+    margin: 8px;
+    padding: 11px;
+    border: 7px #5e5e5e;
+    border-radius: 16px;
+    box-sizing: border-box;
  }
