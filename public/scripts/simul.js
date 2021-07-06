@@ -28,18 +28,29 @@ function calcular(oper) {
     var valor2 = document.calcform.valor2.value;
  
     if (oper == "cdb") {
-       var res = parseFloat(valor1);
-    } else {
-       if (oper == "subtrair") {
-          var res = parseFloat(valor1 - valor2);
-       } else {
-          if (oper == "multiplicar") {
-             var res = valor1*valor2;
-          } else {
-             var res = valor1/valor2;
-          }
+       var res = valor1 * Math.pow(1.0275, valor2);
+       if (valor2 <=6){
+            res = res - (res * 0.225);
        }
+       else if (valor2 <= 12){
+            res = res - (res * 0.20);
+       }
+       else if (valor2 <= 12){
+            res = res - (res * 0.175);
+       }
+    } else if (oper == "tesouro") {
+        var res = valor1 * Math.pow((1.0425 + 0.2328), valor2);
+    } else if (oper == "lci") {
+        if(valor1 < 5000){
+            var res = "Valor inicial menor que 5 mil";
+        }
+        else{
+            var res = valor1 * Math.pow((1.0415 * 98 / 100), valor2);
+        }
+    } else if (oper == "poupanca") {
+        var res = valor1 * Math.pow(1.024, valor2);
     }
+
     var arredondado = "R$ " + parseFloat(res.toFixed(2));
     document.calcform.res.value = arredondado;
  }

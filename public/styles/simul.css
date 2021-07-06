@@ -34,11 +34,15 @@ form fieldset {
  }
 
  .boxx{
-    background-color: aqua;
+    background-color: #021bff;
     vertical-align: top;
     margin: 8px;
     padding: 11px;
     border: 7px #5e5e5e;
     border-radius: 16px;
     box-sizing: border-box;
+ }
+
+ .boxx p{
+    text-align: justify;
  }
