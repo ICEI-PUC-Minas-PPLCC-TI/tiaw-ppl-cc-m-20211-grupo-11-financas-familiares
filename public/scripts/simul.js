@@ -42,7 +42,8 @@ function calcular(oper) {
         var res = valor1 * Math.pow((1.0425 + 0.2328), valor2);
     } else if (oper == "lci") {
         if(valor1 < 5000){
-            var res = "Valor inicial menor que 5 mil";
+            var res = "Valor inicial precisa ser maior que 5 mil";
+            document.calcform.res.value = res;
         }
         else{
             var res = valor1 * Math.pow((1.0415 * 98 / 100), valor2);
