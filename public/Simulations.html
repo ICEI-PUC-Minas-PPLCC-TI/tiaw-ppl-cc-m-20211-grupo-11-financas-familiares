@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/simul.css">
 </head>
 <body>
     <header class="container header">
@@ -31,5 +32,36 @@
             </div>
         </div>
     </header>
-</body>
+    <form name="calcform" method="post" action="">
+        <fieldset>
+           <legend>Simulações financeiras</legend>
+     
+           <label for="valor1">Digite o valor <strong>1</strong>:</label>
+           <input type="text" name="valor1" id="valor1" />
+     
+           <label for="valor2">Digite o valor <strong>2</strong>:</label>
+           <input type="text" name="valor2" id="valor2" />
+     
+           <label for="oper">Selecione a operação:</label>
+           <select name="oper" id="oper">
+              <option value="somar">CDB</option>
+              <option value="subtrair">Subtrair</option>
+              <option value="multiplicar">Multiplifcar</option>
+              <option value="dividir">Tesouro Selic</option>
+           </select>
+     
+           <label for="res">Resultado:</label>
+           <input type="text" name="res" id="res" />
+     
+           <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+        </fieldset>
+     </form>
+     <footer class="container footer">
+        FINANCE - Todos os direitos reservados - 2021
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/simul.js"></script>
+    </body>
 </html>
