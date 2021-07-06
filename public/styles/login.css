@@ -18,10 +18,10 @@ form {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin-left: 4px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: auto;
   }
   
   /* Add a hover effect for buttons */
