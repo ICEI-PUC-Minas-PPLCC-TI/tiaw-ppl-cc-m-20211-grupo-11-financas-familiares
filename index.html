@@ -21,7 +21,7 @@
                 <div class="row logo_area">
 
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 nome">
-                        <h1>Bullish Key</h1>
+                        <h1 id="h_id_user">Bullish Key</h1>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@
                                     <label for="senha" class="form-label">Senha</label>
                                     <input type="password" class="form-control" id="senha" autocomplete="off">
 
-                                    <button type="submit" onclick="document.getElementById('id01').style.display='none'">Login</button>
+                                    <button type="submit" onclick="login()">Login</button>
                                     <label>
                                         <input type="checkbox" checked="checked" name="remember"> Remember me
                                     </label>
@@ -53,6 +53,7 @@
 
                                 <div class="container" style="background-color:#f1f1f1">
                                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <a href=".\CreateAccount.html">Create New Account</a>
                                 </div>
                             </form>
                         </div>
