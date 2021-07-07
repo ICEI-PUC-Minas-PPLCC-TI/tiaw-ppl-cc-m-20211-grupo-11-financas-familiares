@@ -29,6 +29,7 @@ function login() {
         if (username == objLogin[i].username && password == objLogin[i].password) {
             document.getElementById('id01').style.display='none'
             document.getElementById('h_id_user').innerHTML = 'Welcome'
+            alert("Bem Vindo: " + username)
             return
         }        
     }
